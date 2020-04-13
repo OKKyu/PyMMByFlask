@@ -1,0 +1,3 @@
+filename=./data/logging.log
+level=INFO
+format=%(asctime)s - %(level)s - %(message)s

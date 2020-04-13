@@ -1,0 +1,6 @@
+*.pyc
+*.jpeg
+*.jpg
+*.gif
+*.log
+*venv

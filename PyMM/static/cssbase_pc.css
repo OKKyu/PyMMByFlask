@@ -1,0 +1,86 @@
+/*************************************************************************
+ * cssbase_pc.css
+ *  PC版のサイズ、レイアウトの設定
+ *************************************************************************/
+/* ====================================================
+ * ELEMENT
+ * ===================================================*/
+html{
+  height:90%;
+  display:block;
+}
+body{
+  font-size: 18pt;
+  min-width:1024px;
+  min-height:680px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-y: scroll;
+  padding-top:2%;
+  padding-bottom:2%;
+}
+input{
+  min-height:32px;
+  min-width:70%;
+}
+textarea{
+  min-width:72%;
+}
+/* ====================================================
+ * Font
+ * ===================================================*/
+.siteTitleSize{
+  font-size:50pt;
+}
+.titleSize{
+  font-size:30pt;
+}
+.subtitleSize{ 
+  font-size:28pt;
+}
+input, select, textarea{
+  font-size:18pt;
+}
+.siteTitle{
+  font-weight:500;
+  text-align:center;
+  height:200px;
+}
+/* ====================================================
+ * Layout
+ * ===================================================*/
+.leftPanel, .rightPanel{
+  width:25%;
+}
+.mainPanel{
+  width:48%;
+  min-height:100%;
+}
+.title{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+div.subArea span {
+  margin-left:30px;
+}
+/* ====================================================
+ * component
+ * ===================================================*/
+input#portText {
+  min-width:60px;
+  max-width:60px;
+}
+textarea#toAddrsText {
+  height:60px;
+}
+textarea#messageText {
+  min-height:180px;
+}
+input[type="submit"]{
+  text-align:center;
+  min-width:100px;
+  max-width:100px;
+}
+#mascotPic{
+  background-size:180px 100px;
+}

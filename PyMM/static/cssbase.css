@@ -1,0 +1,68 @@
+/*************************************************************************
+ * cssbase.css
+ *  色付けおよびフォントファミリーなど、サイズや配置以外のスタイルを定義する
+ *  また例外的に、スタイルを個別設定するためのcssも定義する（LOCATION）
+ *************************************************************************/
+/* ====================================================
+ * ELEMENT
+ * ===================================================*/
+html{}
+body{
+  font-family: "Meiryo UI", "メイリオ", "ＭＳ Ｐゴシック", "ヒラギノ角ゴシック";
+  background-color: #b0f9ef;
+  background-image:url("pic/background_python1.png");
+}
+input[type="date"]{
+}
+input, select{
+    vertical-align:middle;
+}
+textarea {
+  vertical-align:baseline;
+}
+/* ====================================================
+ * LOCATION
+ * ===================================================*/
+.block{
+  display:block;
+}
+.inline{
+  display:inline;
+}
+.inline-block{
+  display:inline-block;
+}
+/* ====================================================
+ * Font
+ * ===================================================*/
+.siteTitle{
+  font-family:"Meiryo UI";
+  font-style:italic;
+}
+/* ====================================================
+ * Layout
+ * ===================================================*/
+#indexPageTitle{
+  background-color:#ffffff;
+}
+.leftPanel, .rightPanel{
+  background-color:#ffffff;
+}
+.mainPanel{
+  background-color:#ffffff;
+  padding:14px;
+}
+
+div#submitArea{
+  text-align:center;
+}
+/* ====================================================
+ * component
+ * ===================================================*/
+#mascotPic{
+  width:100%;
+  height:100%;
+  background-image:url("pic/IMG_python1.png");
+  background-repeat: no-repeat;
+  background-position:center;
+}

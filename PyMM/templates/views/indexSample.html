@@ -1,0 +1,26 @@
+{% extends "template.html" %}
+{% block content %}
+  <div id ="indexPage">
+    <div id ="indexPageTitle" class="titleSize siteTitle">サンプルページ</div>
+    <div id="contents">
+      <div id="contentsLeft" class="leftPanel inline-block"></div>
+      <div id="contentsMain" class="mainPanel inline-block">
+        <p id="comment1">hello python</p>
+        <input id="text1" type="text"></input>
+        {% if name %}
+           <p id="comment2">hello! {{ name }}</p>
+           <select id="select1">
+              <option selected>ジングル</option>
+              <option>アレンジ</option>
+              <option>オリジナル</option>
+           </select>
+        {% endif %}
+        {% for item in items  %}
+           <p id="comment3">{{ item }}</p>
+           <input id="date" type="date"></input>
+        {% endfor %}
+      </div>
+      <div id="contentsRight" class="rightPanel inline-block"></div>
+    </div>
+  </div>
+{% endblock %}

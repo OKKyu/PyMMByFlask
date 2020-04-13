@@ -1,0 +1,53 @@
+{% extends "template.html" %}
+{% block content %}
+  <div id ="indexPage">
+    <div ></div>
+    <div id="contents">
+      <div id="contentsLeft" class="leftPanel inline-block"></div>
+      <div id="contentsMain" class="mainPanel inline-block">
+        <div id ="indexPageTitle" class="siteTitleSize siteTitle">{{ common.siteTitle }}<br>
+            <div id="mascotPic" class="inline-block"></div>
+        </div>
+        <form method="POST" action="/submit">
+          <!-- SMTP Paragraph -->
+          <div id="titleSmtp" class="title titleSize">SMTP</div>
+          <div class="subArea">
+              <span id="smtpLabel">Smtp:</span>
+              <select id="smtpSelect" name="smtpSelect">
+                 <option value="smtp.gmail.com" selected>gmail</option>
+                 <option value="smtp.mail.yahoo.com" >yahoo mail</option>
+              </select>
+              <span id="portLabel">Port:</span>
+              <input id="portText" name="portText" type="text" maxlength="5" value=587 ></input>
+          </div>
+        
+          <!-- Address Paragraph -->
+          <div id="titleAddr" class="title titleSize">Address</div>
+          <div class="subArea">
+              <span id="frAddrLabel">From&nbsp;&nbsp;&nbsp;:</span><input id="frAddrText" name="frAddrText" type="text" value="{{ user }} "></input><br>
+              <span id="frPwLabel">PW&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span><input id="frPwText" name="frPwText" type="password" value ="{{ pw }}"></input>
+              <br>
+              <span id="toAddrsLabel">To&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span><textarea id="toAddrsText" name="toAddrsText" type="password" >{{ toAddrs }}</textarea>
+          </div>
+        
+          <!-- Message Paragraph -->
+          <div id="titleMsg" class="title titleSize">Message</div>
+          <div class="subArea">
+              <span id="subjectLabel">Subject:</span><input id="subjectText" name="subjectText" type="text"></input>
+              <br>
+              <span id="messageLabel">Message:</span><textarea id="messageText" name="messageText" ></textarea>
+          </div>
+          
+          <div class="subArea" id="submitArea">
+              <input id="submit1" type="submit" value="送信"></input>
+          </div>
+          
+          <div class="subArea">
+              <span id="errorLabel">result&nbsp;:</span><textarea id="errorText" >{{ errorMsg }}</textarea>
+          </div>
+        </form>
+      </div>
+      <div id="contentsRight" class="rightPanel inline-block"></div>
+    </div>
+  </div>
+{% endblock %}
