@@ -44,9 +44,3 @@ def loggingSetting(path):
     finally:
         pass
         
-loggingSetting("./env/logging")
-logging.debug("test")
-logging.info("test")
-logging.error("test")
-logging.fatal("test")
-logging.critical("test")

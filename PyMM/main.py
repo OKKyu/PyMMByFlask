@@ -44,7 +44,7 @@ def submit():
         
         try:
             mailsend(smtpAddr,int(smtpPort),frAddr,passwd,toAddrs,subject,msg)
-            return render_template("views/index.html", common=__COMMON_CONSTS,  user=frAddr, pw=passwd, toAddrs=toAddrs, errorMsg='success')
+            return render_template("views/index.html", common=__COMMON_CONSTS,  user=frAddr, pw=passwd, toAddrs=toAddrs)
         except Exception as ex:
             return render_template("views/index.html", common=__COMMON_CONSTS,  user=frAddr, pw=passwd, toAddrs=toAddrs, errorMsg=str(ex))
         finally:
@@ -75,8 +75,8 @@ def __initialize__():
 __initialize__()
 if __name__ == '__main__':
     try:
-        #app.run()
-        app.run(host='0.0.0.0', debug=True, port=5002)
+        app.run()
+        #app.run(host='0.0.0.0', debug=True, port=5002)
     except Exception as ex:
         print(ex)
     finally:
