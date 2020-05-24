@@ -21,18 +21,6 @@ textarea {
   vertical-align:baseline;
 }
 /* ====================================================
- * LOCATION
- * ===================================================*/
-.block{
-  display:block;
-}
-.inline{
-  display:inline;
-}
-.inline-block{
-  display:inline-block;
-}
-/* ====================================================
  * Font
  * ===================================================*/
 .siteTitle{
@@ -42,15 +30,24 @@ textarea {
 /* ====================================================
  * Layout
  * ===================================================*/
+div.title{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 #indexPageTitle{
   background-color:#ffffff;
 }
 .leftPanel, .rightPanel{
   background-color:#ffffff;
+  display:inline-block;
 }
 .mainPanel{
   background-color:#ffffff;
   padding:14px;
+  display:inline-block;
+}
+.contentsRight, .contentsLeft{
+  display:inline-block;
 }
 
 div#submitArea{

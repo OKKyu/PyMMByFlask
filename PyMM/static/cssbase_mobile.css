@@ -1,16 +1,15 @@
 /*************************************************************************
- * cssbase_pc.css
- *  PC版のサイズ、レイアウトの設定
+ * cssbase_mobile.css
+ *  mobile版のサイズ、レイアウトの設定
  *************************************************************************/
 /* ====================================================
  * ELEMENT
  * ===================================================*/
 html{
-  height:100%;
   display:block;
 }
 body{
-  font-size: 10pt;
+  font-size: 12pt;
   max-width:480px;
   margin-left: auto;
   margin-right: auto;
@@ -23,7 +22,7 @@ input{
   min-width:60%;
 }
 textarea{
-  min-width:65%;
+  min-width:60%;
 }
 /* ====================================================
  * Font
@@ -47,21 +46,25 @@ input, select, textarea{
 /* ====================================================
  * Layout
  * ===================================================*/
-.leftPanel, .rightPanel{
-  width:15%;
-}
 .mainPanel{
-  min-height:100%;
+  width:90%;
 }
 .title{
   margin-top: 10px;
 }
 div.subArea span {
   margin-left:10px;
+  width:75px;
+  display:inline-block;
+  vertical-align:top;
 }
 /* ====================================================
  * component
  * ===================================================*/
+#portLabel{
+  min-width:40px;
+  max-width:40px;
+}
 input#portText {
   min-width:35px;
   max-width:35px;
@@ -76,4 +79,5 @@ input[type="submit"]{
   text-align:center;
   min-width:80px;
   max-width:100px;
+  margin-bottom:10px;
 }

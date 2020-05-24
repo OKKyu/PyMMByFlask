@@ -1,6 +1,6 @@
 /*************************************************************************
- * cssbase_pc.css
- *  PC版のサイズ、レイアウトの設定
+ * cssbase_tablet.css
+ *  tablet版のサイズ、レイアウトの設定
  *************************************************************************/
 /* ====================================================
  * ELEMENT
@@ -25,7 +25,7 @@ input{
   min-width:62%;
 }
 textarea{
-  min-width:65%;
+  min-width:64%;
 }
 /* ====================================================
  * Font
@@ -63,6 +63,8 @@ input, select, textarea{
 }
 div.subArea span {
   margin-left:30px;
+  display:inline-block;
+  width:120px;
 }
 /* ====================================================
  * component
@@ -81,6 +83,7 @@ input[type="submit"]{
   text-align:center;
   min-width:100px;
   max-width:100px;
+  margin-bottom:10px;
 }
 #mascotPic{
   background-size:120px 80px;
