@@ -1,6 +1,6 @@
 # overwiev
 
-A little simple mail sender for my python practice.
+A little simple mail sender for learning python myself.
 
 referenced book is ...
  『退屈なことはPythonにやらせよう』
@@ -9,18 +9,14 @@ referenced book is ...
 
 # Synopsis
 
-```sh
-# setup
- please run setup.sh
+- setup
+  please run setup.sh
 
-# run
- please run run.sh
- * Before run this shell, please overwrite hostname in this run.sh.
- 
- This shell use gunicorn with WSGI.
- if you want to use other WSGI, you can overwirte this shell source.
- 
-```
+- run
+  please run "bash run.sh" on terminal.  
+  Before run this shell, please overwrite hostname in run.sh.  
+  This shell use gunicorn with WSGI.  
+  if you want to use other WSGI, you can overwirte this shell source.  
 
 # Structure
 
@@ -33,9 +29,11 @@ referenced book is ...
 - `PyMM/env/lg` default login account/password of Gmail.
 - `PyMM/env/logging` unused yet.
 - `PyMM/env/to` default mailaddress that send to.
-- `PyMM/venv/` vurtualenv folder.
+- `PyMM/venv/` virtualenv folder.
 
 # Lisense
-
+  PyMiniMailer version 1.0.0  
+  (c) 2020 OKKyu allrights reserved under MIT license.  
+  
 ## Author
 OKKyu
