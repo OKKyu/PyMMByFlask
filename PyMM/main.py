@@ -58,7 +58,6 @@ def __initialize__():
         global __frPw
         __frUser = lst[0][0]
         __frPw = lst[0][1]
-        
     else:
         raise Exception("missing Login File")
     
@@ -75,8 +74,7 @@ def __initialize__():
 __initialize__()
 if __name__ == '__main__':
     try:
-        app.run()
-        #app.run(host='0.0.0.0', debug=True, port=5002)
+        app.run(host='0.0.0.0', debug=True, port=5002)
     except Exception as ex:
         print(ex)
     finally:
