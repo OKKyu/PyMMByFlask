@@ -4,3 +4,5 @@
 *.gif
 *.log
 *venv
+*.txt
+!requirements.txt
